@@ -1,3 +1,6 @@
 exports.view = function(req, res){
-  res.render('log');
+  var date = req.params.date;
+  res.render('log', {
+    'logDate' : date
+  });
 };
