@@ -1,3 +1,15 @@
 exports.view = function(req, res){
-  res.render('challenge');
+  var challenges = Array(
+    'School',
+    'Hobbies',
+    'Sports',
+    'Act Insane',
+    'IDK, Figure it out yourself',
+    'Bad Pickup Lines'
+  );
+  var challenge = challenges[Math.floor(Math.random()*challenges.length)];
+
+  res.render('challenge',{
+    'challenge' : challenge
+  });
 };
