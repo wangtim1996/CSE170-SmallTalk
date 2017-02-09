@@ -8,6 +8,41 @@
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="/css/introHCI.css" rel="stylesheet">
+
+
+	<style>
+		h1{
+			font-size: 60px;
+			color: blue;
+		}
+		h2{
+			font-size:40px;
+			color:blue;
+		}
+		.challengeBorder{
+			background-color: #4169E1;
+
+		}
+		.theChallenge{
+			font-size: 25px;
+			color: white;
+		}
+			
+		.topRightCorner{
+			position: absolute;
+			top:0;
+			right:0;
+		}
+
+		.main{
+			margin: 30px auto;
+			text-align: center;
+			vertical-align: center;
+
+
+		}
+		
+	</style>
 	<!-- this is a comment in HTML -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -22,21 +57,41 @@
 	<div class="container">
 		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
 		<!-- p means paragraph -->
-		<div class="jumbotron">
+		<div class="topRightCorner">
+			<a href="/">
+				<img src="images/homeBut.jpg" alt="back to main menu	">
+			</a>
+		</div>
+
+		<div class="text-center">
 			<h1>Challenge</h1>
 		</div>
 
-		<a href="/">
-			<img src="images/new_challenge.jpg" alt="back to main menu">
-		</a>
-		<a href="/complete">
-			<img src="images/new_challenge.jpg" alt="I'm Done">
-		</a>
+		<hr style="height:4px;border:none;color:#333;background-color:#333;" />
 
-		<p>RANDOM CHALLENGE HERE: {{challenge}}</p>
+		<div class="text-center">
+			<h2>Your Challenge of the Day</h2>
+		</div>
 
+		<table class="main" border="0" cellpadding="15" margin="10">
+			<tr class="challengeBorder">
+				<td>
+					<p class="theChallenge">{{challenge}}</p>	
+				</td>
+			</tr>
+		</table>
 
+		<table class="main" border="0">
+			<tr>
+				<td>		
+				<a href="/complete">
+					<img src="images/itsDone.jpg" alt="I'm Done" width= "150" height ="150">
+					</a>
+				</td>
+			</tr>
+		</table>
 
+	</div>
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
