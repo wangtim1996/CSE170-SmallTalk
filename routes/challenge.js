@@ -1,11 +1,11 @@
 exports.view = function(req, res){
   var challenges = Array(
-    'School',
-    'Hobbies',
-    'Sports',
-    'Act Insane',
+    'Say hi to a random stranger.',
+    'Ask a stranger a question.',
+    'Complement a boy',
+    'Act insane in front of people',
     'IDK, Figure it out yourself',
-    'Bad Pickup Lines'
+    'Complement a girl'
   );
   var challenge = challenges[Math.floor(Math.random()*challenges.length)];
 

@@ -8,6 +8,17 @@
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="/css/introHCI.css" rel="stylesheet">
+	<style>
+		h1{
+			font-size: 60px;
+			color: blue;
+		}
+
+		table.main {
+    		border-collapse: separate;
+   			border-spacing: 20px;
+		}
+	</style>
 	<!-- this is a comment in HTML -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -22,27 +33,41 @@
 	<div class="container">
 		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
 		<!-- p means paragraph -->
-		<div class="jumbotron">
-			<h1>Small Talk</h1>
+		<div class="text-center">
+			<h1>
+				Small Talk
+			</h1>
 		</div>
 
-		<a href="challenge/">
-			<img src="images/new_challenge.jpg" alt="challenge">
-		</a>
-		<a href="history/">
-			<img src="images/new_challenge.jpg" alt="history">
-		</a>
-		<a href="help/">
-			<img src="images/new_challenge.jpg" alt="halp">
-		</a>
-		<a href="guide/">
-			<img src="images/new_challenge.jpg" alt="how to talk like a real human bean">
-		</a>
+		<hr style="height:4px;border:none;color:#333;background-color:#333;" />
 
+		<table class="main" border="0" align="center" >
+			<tr>
+			<td>		
+				<a href="challenge" >
+					<img src="images/main.jpg" alt="challenge" width ="200" height="200">
+				</a>
+			</td>
+			<td>
+				<a href="history">
+					<img src="images/history.jpg" alt="history" width ="200" height="200">
+				</a>
+			</td>
+			</tr>
 
-
-
-
+			<tr>
+			<td>	
+				<a href="help">
+					<img src="images/help.jpg" alt="halp" width ="200" height="200">
+				</a>
+			</td>
+			<td>
+				<a href="guide">
+					<img src="images/generaltips.jpg" alt="how to 	talk like a real human bean" width ="200" height="200">
+				</a>
+			</td>
+			</tr>
+		</table>
 
 	</div>
 
