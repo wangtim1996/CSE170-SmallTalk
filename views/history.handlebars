@@ -32,10 +32,10 @@
 		<!-- divs are invisible structuring elements that stack vertically by default. Use them to organize your code -->
 		<!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
 		<!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
-		{{#each logs}}
+		{{#each entries}}
 		<div class="/log" id="{{date}}">
 			<a href="/log/{{date}}" class="thumbnail">
-				<p>{{date}}</p>
+				<p>{{date}} - {{title}}</p>
 			</a>
 		</div>
 		{{/each}}
