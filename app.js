@@ -17,6 +17,7 @@ var entry = require('./routes/entry');
 var help = require('./routes/help');
 var guide = require('./routes/guide');
 var complete = require('./routes/complete');
+var add = require('./routes/add');
 // Example route
 // var user = require('./routes/user');
 
@@ -52,6 +53,7 @@ app.get('/entry', entry.view);
 app.get('/help', help.view);
 app.get('/guide', guide.view);
 app.get('/complete', complete.view);
+app.get('/add', add.addEntry);
 
 
 // Example route
