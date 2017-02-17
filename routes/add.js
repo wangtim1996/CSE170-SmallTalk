@@ -13,5 +13,5 @@ exports.addEntry = function(req, res) {
   };
   console.log(entry);
   data.entries.push(entry);
-  res.redirect('/');
+  res.redirect('/index');
 }
