@@ -52,10 +52,11 @@ app.get('/history', history.view);
 app.get('/log/:date', log.view);
 app.get('/challenge', challenge.view);
 app.get('/entry', entry.view);
+app.get('/entry/:date', entry.edit);
 app.get('/help', help.view);
 app.get('/guide', guide.view);
 app.get('/complete', complete.view);
-app.get('/add', add.addEntry);
+app.post('/add', add.addEntry);
 
 
 // Example route

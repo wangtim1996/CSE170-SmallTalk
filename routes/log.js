@@ -8,6 +8,10 @@ exports.view = function(req, res){
     if(data.entries[i].date == date)
     {
       entry = data.entries[i];
+      var epochSec = entry.date;
+      var newDate = new Date(parseInt(epochSec));
+      var stringDate = newDate.toDateString();
+      entry['readDate'] = stringDate;
       break;
     }
   }

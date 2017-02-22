@@ -23,7 +23,7 @@
 		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
 		<!-- p means paragraph -->
 		<div class="jumbotron">
-			<h1>Entry</h1>
+			<h1>{{header}}</h1>
 		</div>
 
 
@@ -31,16 +31,18 @@
 			<img src="images/new_challenge.jpg" alt="nvm, back to main menu">
 		</a>
 
-		<form name="log" role="form"  method="get" action="/add">
+		<form name="log" role="form"  method="post" action="/add">
 			<h3>Write a log!</h3>
+			<h4>{{readDate}}</h4>
 			<div class="form-group">
 				<label for="name">Title:</label>
-				<input type="text" class="form-control" id="name" placeholder="Title" name="title">
+				<input type="text" class="form-control" id="name" placeholder="Title" name="title" value="{{title}}">
 			</div>
 			<div class="form-group">
 				<label for="description">Log:</label>
-				<input type="text" class="form-control" id="description" placeholder="Log" name="log">
+				<input type="text" class="form-control" id="description" placeholder="Log" name="log" value="{{desc}}">
 			</div>
+			<input type="hidden" name="date" value="{{date}}">
 		  <input type="submit" id="submitBtn" class="btn btn-default" value="Submit the Log"></input>
 		</form>
 
