@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
-	<link href="/css/introHCI.css" rel="stylesheet">
+	<link href="/css/smallTalk.css" rel="stylesheet">
 
 
 	<style>
@@ -20,28 +20,21 @@
 			color:blue;
 		}
 		.challengeBorder{
-			background-color: #4169E1;
+			background-color: white;
 
 		}
 		.theChallenge{
 			font-size: 25px;
-			color: white;
+			color: black;
 		}
 
-		.topRightCorner{
-			position: absolute;
-			top:0;
-			right:0;
-        }
 
 		.main{
 			margin: 30px auto;
 			text-align: center;
 			vertical-align: center;
-
-
-		}
-
+        }
+        
 	</style>
 	<!-- this is a comment in HTML -->
 
@@ -53,24 +46,20 @@
     <![endif]-->
 </head>
 
-<body>
+<body class="backgroundColor">
 	<div class="container">
 		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
 		<!-- p means paragraph -->
-		<div class="topRightCorner">
-			<a href="/index">
-				<img src="images/homeBut.jpg" alt="back to main menu	">
-			</a>
-        </div>
-
+        
+        <div><a href="/index"><button class="homebtn">MAIN MENU</button></a></div>
 		<div class="text-center">
-			<h1>Challenge</h1>
+			<h1 class="titlePage">Challenge </h1>
 		</div>
 
 		<hr style="height:4px;border:none;color:#333;background-color:#333;" />
 
 		<div class="text-center">
-			<h2>Your Challenge of the Day</h2>
+			<h2 class="subHeader">Your Challenge of the Day</h2>
 		</div>
 
 		<table class="main" border="0" cellpadding="15" margin="10">
@@ -85,7 +74,7 @@
 			<tr>
 				<td>
 				<a href="/complete">
-					<img src="images/itsDone.jpg" alt="I'm Done" width= "150" height ="150">
+					 <button class="mediumbtn">Challenge Completed</button>
 					</a>
 				</td>
 			</tr>

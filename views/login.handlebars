@@ -5,54 +5,68 @@
   <title>Login Form</title>
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link href="/css/smallTalk.css" rel="stylesheet">
 
-    <style>
+<style>
+    
+.thebackground{
+    background-color: #FF512F; 
+    background-color: linear-gradient(to left, #FF512F , #F09819); 
+    background-color: linear-gradient(to left, #FF512F , #F09819); 
+                
+} 
+    
 .login { 
 	position: absolute;
-	top: 50%;
+	top: 40%;
 	left: 50%;
 	margin: -150px 0 0 -150px;
 	width:300px;
 	height:300px;
+    font-size:35px
+    
 }
-.login h1 { color: #00008B; text-shadow: 0 0 10px rgba(0,0,0,0.2); letter-spacing:1px; text-align:center; }
+
+.login h1 { color: #3cb0fd; text-shadow: -1px 0px 5px rgba(0, 0, 0, 1); letter-spacing:1px; text-align:center; }
 
 input { 
 	width: 100%; 
 	margin-bottom: 10px; 
+    background: #3498db;
 	background: rgba(0,0,0,0.1);
 	border: none;
 	outline: none;
 	padding: 10px;
 	font-size: 13px;
-	color: #fff;
+    color: #ffffff;
 	text-shadow: 1px 1px 1px rgba(0,0,0,1);
 	border: 1px solid rgba(0,0,0,0.3);
 	border-radius: 4px;
 	box-shadow: inset 0 -5px 45px rgba(100,100,100,0.2), 0 1px 1px rgba(255,255,255,0.2);
-	-webkit-transition: box-shadow .5s ease;
-	-moz-transition: box-shadow .5s ease;
-	-o-transition: box-shadow .5s ease;
-	-ms-transition: box-shadow .5s ease;
+	transition: box-shadow .5s ease;
+	transition: box-shadow .5s ease;
+    transition: box-shadow .5s ease;
+	transition: box-shadow .5s ease;
 	transition: box-shadow .5s ease;
 }
 input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2); }
+    
 
-    </style>
+ </style>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 
 </head>
 
-<body>
+<body class="thebackground">
   <div class="login">
-	<h1>Login</h1>
+	<h1>SMALL TALK</h1>
 
     <form action = "index">
     	<input type="text" name="u" placeholder="Username" required="required" />
         <input type="password" name="p" placeholder="Password" required="required" />
         
-        <button type="submit" class="btn btn-primary btn-block btn-large">Log Me In.</button>
+        <button class="smallbtn" type="submit" >Log Me In</button>
         
     </form>
 </div>

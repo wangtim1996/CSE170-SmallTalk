@@ -7,7 +7,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
-	<link href="/css/introHCI.css" rel="stylesheet">
+	<link href="/css/smallTalk.css" rel="stylesheet">
+    
+   
 	<!-- this is a comment in HTML -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -18,18 +20,15 @@
     <![endif]-->
 </head>
 
-<body>
+<body class="backgroundColor">
 	<div class="container">
 		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
 		<!-- p means paragraph -->
-		<div class="jumbotron">
-			<h1>{{header}}</h1>
+		  <div><a href="/index"><button class="homebtn">MAIN MENU</button></a></div>
+		<div class="titlePage">
+			<h1 class="titlePage">{{header}}</h1>
 		</div>
-
-
-		<a href="/index">
-			<img src="images/new_challenge.jpg" alt="nvm, back to main menu">
-		</a>
+        <hr style="height:4px;border:none;color:#333;background-color:#333;" />
 
 		<form name="log" role="form"  method="post" action="/add">
 			<h3>Write a log!</h3>
@@ -43,7 +42,7 @@
 				<input type="text" class="form-control" id="description" placeholder="Log" name="log" value="{{desc}}">
 			</div>
 			<input type="hidden" name="date" value="{{date}}">
-		  <input type="submit" id="submitBtn" class="btn btn-default" value="Submit the Log"></input>
+		  <button class="smallbtn" type="submit" >Save</button>
 		</form>
 
 

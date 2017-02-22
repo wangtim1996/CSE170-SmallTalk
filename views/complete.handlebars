@@ -7,7 +7,22 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
-	<link href="/css/introHCI.css" rel="stylesheet">
+    <link href="/css/smallTalk.css" rel="stylesheet">
+
+    <style>
+       
+        .victory{
+            background: #ffb347; 
+            background: linear-gradient(to left, #ffb347 , #ffcc33); 
+            background: linear-gradient(to left, #ffb347 , #ffcc33); 
+        }
+        
+        .bigbtn{
+            height:250px;
+            margin:15px;
+        }
+       
+    </style>     
 	<!-- this is a comment in HTML -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -18,23 +33,27 @@
     <![endif]-->
 </head>
 
-<body>
-	<div class="container">
+<body class="victory">
+	<div class="container" align="center">
 		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
 		<!-- p means paragraph -->
-		<div class="jumbotron">
-			<h1>Challenge Complete!</h1>
+		<div>
+			<h1 class="titlePage">
+				CHALLENGE COMPLETE!!
+			</h1>
 		</div>
 
 		<a href="/index">
-			<img src="images/new_challenge.jpg" alt="back to main menu">
+			 <button class="mediumbtn">MAIN MENU</button>
 		</a>
+        
+        <div>
 		<a href="/entry">
-			<img src="images/new_challenge.jpg" alt="write a log!">
+			<button class="bigbtn">WRITE ABOUT IT!</button>
 		</a>
+        </div>
 
-		<p>Congratulations</p>
-
+    </div>
 
 
 
