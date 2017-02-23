@@ -8,12 +8,12 @@
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="/css/smallTalk.css" rel="stylesheet">
-    
+
 	<style>
         .subheader{
             font-size:25px;
-            
-             
+
+
         }
         .mediumbtn{
             font-size:15px;
@@ -21,13 +21,13 @@
             height: 50px;
             margin:10px;
         }
-        
-        
+
+
         .descBorder{
 			background-color: white;
-            
+
 		}
-        
+
     </style>
 	<!-- this is a comment in HTML -->
 
@@ -45,7 +45,7 @@
 		<!-- p means paragraph -->
 		 <div><a href="/index"><button class="homebtn">MAIN MENU</button></a></div>
 			<h1 class="titlePage">JOURNAL ENTRY </h1>
-		
+
 
 		<hr style="height:4px;border:none;color:#333;background-color:#333;" />
 
@@ -54,9 +54,10 @@
             	<h3>{{title}}</h3>
 			</div>
 			<div class="form-group form-group-lg">
-				<input type="text" class="form-control" id="description" name="log" value="{{desc}}">
-			</div>        
-		
+        <p>{{desc}}</p>
+				<!--<input type="text" class="form-control" id="description" name="log" value="{{desc}}">-->
+			</div>
+
 
 		<a href="/entry/{{date}}">
 			<button class="mediumbtn">Edit Entry</button>
@@ -64,8 +65,8 @@
 		<a href="/history/">
 			<button class="mediumbtn">Back To History</button>
 		</a>
-    
-  </div> 
+
+  </div>
 
 
 	<script src="https://code.jquery.com/jquery.js"></script>
