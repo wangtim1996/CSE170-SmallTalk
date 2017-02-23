@@ -25,21 +25,20 @@
 		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
 		<!-- p means paragraph -->
 		  <div><a href="/index"><button class="homebtn">MAIN MENU</button></a></div>
-		<div class="titlePage">
+		<div>
 			<h1 class="titlePage">{{header}}</h1>
 		</div>
         <hr style="height:4px;border:none;color:#333;background-color:#333;" />
 
 		<form name="log" role="form"  method="post" action="/add">
-			<h3>Write a log!</h3>
 			<h4>{{readDate}}</h4>
 			<div class="form-group">
 				<label for="name">Title:</label>
 				<input type="text" class="form-control" id="name" placeholder="Title" name="title" value="{{title}}">
 			</div>
 			<div class="form-group">
-				<label for="description">Log:</label>
-				<input type="text" class="form-control" id="description" placeholder="Log" name="log" value="{{desc}}">
+				<label for="description">Description:</label>
+				<input type="text" class="form-control" id="description" placeholder="Write Here" name="log" value="{{desc}}">
 			</div>
 			<input type="hidden" name="date" value="{{date}}">
 		  <button class="smallbtn" type="submit" >Save</button>

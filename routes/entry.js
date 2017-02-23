@@ -3,7 +3,7 @@ var data = require("../data.json");
 exports.view = function(req, res){
   var entryData = {};
   var d = new Date();
-  entryData['header'] = "Write A Log";
+  entryData['header'] = "Write A Journal Entry";
   entryData['date'] = d.getTime();
   entryData['readDate'] = d.toDateString();
   entryData['title'] = "";
@@ -30,6 +30,6 @@ exports.edit = function(req, res)
     }
   }
 
-  entryData['header'] = "Edit a Log";
+  entryData['header'] = "Edit An Entry";
   res.render('entry', entryData);
 };
