@@ -1,15 +1,15 @@
 .backgroundColor{
-    background: #FF512F; 
-    background: linear-gradient(to left, #FF512F , #F09819); 
-    background: linear-gradient(to left, #FF512F , #F09819); 
+    background: #FFBE61; 
+    /*background: linear-gradient(to left, #FF512F , #F09819); 
+    background: linear-gradient(to left, #FF512F , #F09819); */
     width:100%;   
 }
 
 
 .titlePage{
-    color: #3cb0fd;
+    color: #0B76BC;
     font-size: 450%;
-    text-shadow: -1px 0px 5px rgba(0, 0, 0, 1);
+    
     letter-spacing:1px;
     text-align:center;
     width: 90%;
@@ -17,9 +17,9 @@
 }
 
 .subHeader{
-    color: #3cb0fd;
+    color: #0B76BC;
     font-size: 200%;
-    text-shadow: -1px 0px 5px rgba(0, 0, 0, 1);
+
     letter-spacing:1px;
 
 }
