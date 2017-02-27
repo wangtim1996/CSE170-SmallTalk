@@ -8,8 +8,16 @@
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="/css/smallTalk.css" rel="stylesheet">
-    
-   
+	<style>
+textarea{
+	width: 100%;
+	height: 200px;
+	resize: none;
+}
+
+	</style>
+
+
 	<!-- this is a comment in HTML -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -30,7 +38,7 @@
 		</div>
         <hr style="height:4px;border:none;color:#333;background-color:#333;" />
 
-		<form name="log" role="form"  method="post" action="/add">
+		<form name="logSubmit" role="form" method="post" action="/add" id="userForm">
 			<h4>{{readDate}}</h4>
 			<div class="form-group">
 				<label for="name">Title:</label>
@@ -38,7 +46,8 @@
 			</div>
 			<div class="form-group">
 				<label for="description">Description:</label>
-				<input type="text" class="form-control" id="description" placeholder="Write Here" name="log" value="{{desc}}">
+				<!--<input type="text" class="form-control" id="description" placeholder="Write Here" name="log" value="{{desc}}">-->
+				<textarea name="log" form="userForm" id="description" placeholder="Write Here" >{{desc}}</textarea>
 			</div>
 			<input type="hidden" name="date" value="{{date}}">
 		  <button class="smallbtn" type="submit" >Save</button>
