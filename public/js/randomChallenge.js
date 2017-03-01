@@ -21,6 +21,19 @@ function randomizeChallenge(e)
 
 }
 
+function set(){
+    var challenges = Array(
+		'Say hi to a random stranger.',
+		'Ask a stranger a question.',
+		'Complement a boy',
+		'Act insane in front of people',
+		'IDK, Figure it out yourself',
+		'Complement a girl'
+	);
+	var challenge = challenges[Math.floor(Math.random()*challenges.length)];
+    document.getElementById("chal").innerHTML = challenge;
+}
+
 function setRandom()
 {
 	var challenges = Array(
@@ -34,4 +47,5 @@ function setRandom()
 	var challenge = challenges[Math.floor(Math.random()*challenges.length)];
 
 	$('.theChallenge').html(challenge);
+    
 }

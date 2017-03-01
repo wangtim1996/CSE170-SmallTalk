@@ -51,37 +51,66 @@
 		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
 		<!-- p means paragraph -->
         
+        
+     
         <div><a href="/index"><button class="homebtn">MAIN MENU</button></a></div>
-		<div class="text-center">
+		<div align="center">
 			<h1 class="titlePage">Challenge </h1>
 		</div>
 
-		<hr style="height:4px;border:none;color:#333;background-color:#333;" />
+        {{#if alt}}
+              <hr style="height:4px;border:none;color:#333;background-color:#333;" />
 
-		<div class="text-center">
-			<h2 class="subHeader">Your Challenge of the Day</h2>
-		</div>
+            <div class="text-center">
+              <h2 class="subHeader">Your Challenge of the Day</h2>
+            </div>
 
-		<table class="main" border="0" cellpadding="15" margin="10">
-			<tr class="challengeBorder">
-				<td>
-					<a href="#"><p class="theChallenge">{{challenge}}</p></a>
-				</td>
-			</tr>
-		</table>
+            <table class="main" border="0" cellpadding="15" margin="10">
+                <tr class="challengeBorder">
+                    <td>
+                        
+                        <div>
+                              <p id="chal" class="theChallenge">{{challenge}}</p>
+                         </div>
+                    </td>
+                </tr>
+            </table>
+           
+        <div align="center">
+        <button onClick="set()" class ="smallbtn">Get New Challenge</button>
+        </div>     
+       
+        
+         {{else}}
+            <hr style="height:4px;border:none;color:#333;background-color:#333;" />
 
-		<table class="main" border="0">
-			<tr>
-				<td>
-				<a href="/complete">
-					 <button class="mediumbtn">Challenge Completed</button>
-					</a>
-				</td>
-			</tr>
-		</table>
+            <div class="text-center">
+                <h2 class="subHeader">Your Challenge of the Day</h2>
+            </div>
+
+            <table class="main" border="0" cellpadding="15" margin="10">
+                <tr class="challengeBorder">
+                    <td>
+                        <a href="#"><p class="theChallenge">{{challenge}}</p></a>
+                    </td>
+                </tr>
+            </table>
+
+        {{/if}}
+        <table class="main" border="0">
+                <tr>
+                    <td>
+                    <a href="/complete">
+                         <button class="mediumbtn">Challenge Completed</button>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+
 
 	</div>
 
+    
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
 	<script src="/js/randomChallenge.js"></script>

@@ -56,11 +56,9 @@ app.get('/entry/:date', entry.edit);
 app.get('/help', help.view);
 app.get('/guide', guide.view);
 app.get('/complete', complete.view);
+app.get('/new',challenge.view2)
 app.post('/add', add.addEntry);
 
-
-// Example route
-// app.get('/users', user.list);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

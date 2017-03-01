@@ -1,7 +1,5 @@
 .backgroundColor{
     background: #FFBE61; 
-    /*background: linear-gradient(to left, #FF512F , #F09819); 
-    background: linear-gradient(to left, #FF512F , #F09819); */
     width:100%;   
 }
 
@@ -66,7 +64,7 @@
   margin: 10px;
 }
 
-.smallbtn {
+.loginbtn{
   background: #3498db;
   background-image: linear-gradient(top, #3498db, #2980b9);
   background-image: linear-gradient(top, #3498db, #2980b9);
@@ -79,8 +77,28 @@
   text-shadow: -1px 0px 8px rgba(0, 0, 0, 1);
   color: #ffffff;
   width: 200px;
-  height: 50px;
+  height: 60px;
+   text-align: center;
   font-size: 26px;
+  padding: 10px 40px 10px 40px;
+}
+
+.smallbtn {
+  background: #3498db;
+  background-image: linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  border-radius: 8;
+  border-radius: 8;
+  border-radius: 8px;
+  text-shadow: -1px 0px 8px rgba(0, 0, 0, 1);
+  color: #ffffff;
+  width: 15%;
+  height: 150%;
+   text-align: center''
+  font-size: 80%;
   padding: 10px 40px 10px 40px;
 }
 
