@@ -23,17 +23,11 @@ function randomizeChallenge(e)
 
 function set(){
     var challenges = Array(
-		'Say hi to a random stranger.',
+        'Say hi to a random stranger.',
 		'Ask a stranger a question.',
 		'Complement a boy',
-		'Ask a stranger where the is the closest restroom located',
-		'Find out the name of a stranger you find attractive',
-        'Give a stranger candy',
-		'Do one good deed for someone you have never met',
-        'Have a conversation with someone who is not one of your friends',
-		'Give your sit to a stranger in public transport',
-        'Offer food to a homeless man',
-        'Buy a drink for a homeless man',
+		'Act insane in front of people',
+		'IDK, Figure it out yourself',
 		'Complement a girl'
 	);
 	var challenge = challenges[Math.floor(Math.random()*challenges.length)];
@@ -43,18 +37,12 @@ function set(){
 function setRandom()
 {
 	var challenges = Array(
-        'Say hi to a random stranger.',
+		'Say hi to a random stranger.',
 		'Ask a stranger a question.',
 		'Complement a boy',
-		'Ask a stranger where the is the closest restroom located',
-		'Find out the name of a stranger you find attractive',
-        'Give a stranger candy',
-		'Do one good deed for someone you have never met',
-        'Have a conversation with someone who is not one of your friends',
-		'Give your sit to a stranger in public transport',
-        'Offer food to a homeless man',
-        'Buy a drink for a homeless man',
-		'Complement a girl
+		'Act insane in front of people',
+		'IDK, Figure it out yourself',
+		'Complement a girl'
 	);
 	var challenge = challenges[Math.floor(Math.random()*challenges.length)];
 
