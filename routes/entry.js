@@ -8,6 +8,7 @@ exports.view = function(req, res){
   entryData['readDate'] = d.toDateString();
   entryData['title'] = "";
   entryData['desc'] = "";
+  entryData['challenge'] = req.body.challenge;
   res.render('entry', entryData);
 };
 

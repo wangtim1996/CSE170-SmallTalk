@@ -1,3 +1,7 @@
 exports.view = function(req, res){
-  res.render('complete');
+  console.log(req);
+  var data = {};
+  console.log(req.body);
+  data['challenge'] = req.body.challenge;
+  res.render('complete', data);
 };

@@ -5,12 +5,14 @@ exports.addEntry = function(req, res) {
   var date = req.body.date;
   var title = req.body.title;
   var log = req.body.log;
+  var challenge = req.body.challenge;
   var edit = false;
 
   var entry = {
     "date" : date,
     "title" : title,
-    "desc" : log
+    "desc" : log,
+    "challenge" : challenge
   };
 
   for(var i = 0; i < data.entries.length; i++)
@@ -20,7 +22,7 @@ exports.addEntry = function(req, res) {
       data.entries[i].date = date;
       data.entries[i].title = title;
       data.entries[i].desc = log;
-
+      data.entries[i].challenge = challenge;
       edit = true;
 
 

@@ -10,10 +10,10 @@
     <link href="/css/smallTalk.css" rel="stylesheet">
 
     <style>
-       
+
         .victory{
-            background: #ffffff; 
-            /* 
+            background: #ffffff;
+            /*
             previous color #FFBE61
             */
 
@@ -35,8 +35,8 @@
         .titlePage{
             font-size:250%
         }
-           
-    </style>     
+
+    </style>
 	<!-- this is a comment in HTML -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -51,25 +51,27 @@
 	<div class="container" >
 		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
 		<!-- p means paragraph -->
-		<div align="center"> 
+		<div align="center">
 			<h1 class="titlePage">
 				CHALLENGE COMPLETE!!
 			</h1>
 		</div>
 
-        <div align="center">
-		<a href="/index">
-			 <button class="mediumbtn">MAIN MENU</button>
-		</a>
-        
-        <div>
-		<a href="/entry">
-			<button class="bigbtn">WRITE ABOUT IT!</button>
-		</a>
-        </div>
-        </div>
+    <div align="center">
+			<a href="/index">
+				 <button class="mediumbtn">MAIN MENU</button>
+			</a>
+
+	    <div>
+				<h3 class="challenge">Completed: {{challenge}}</h3>
+				<form action="/entry" method="post" id="challengeDone">
+					<input type="hidden" name="challenge" id="challengeInput" value="{{challenge}}">
+				</form>
+				<button type="submit" form="challengeDone" value="Completed"  class="bigbtn">WRITE ABOUT IT!</button>
+      </div>
     </div>
-     
+  </div>
+
 
 
 	<script src="https://code.jquery.com/jquery.js"></script>
