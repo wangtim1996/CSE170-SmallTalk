@@ -11,10 +11,7 @@ $(document).ready(function() {
  */
 function initializePage() {
 	$('.theChallenge').click(randomizeChallenge);
-    $(".mediumbtn").click(function(e) {
-		e.preventDefault();
-		ga("send", "event", "challengeComplete", "click");
-	});
+   
 }
 
 
