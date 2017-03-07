@@ -39,7 +39,8 @@ textarea{
         <hr style="height:4px;border:none;color:#333;background-color:#333;" />
 
 		<form name="logSubmit" role="form" method="post" action="/add" id="userForm">
-			<h4>{{readDate}}</h4>
+			<h3>{{readDate}}</h3>
+			<h4>Challenge: {{challenge}}</h4>
 			<div class="form-group">
 				<label for="name">Title:</label>
 				<input type="text" class="form-control" id="name" placeholder="Title" name="title" value="{{title}}">
@@ -50,6 +51,7 @@ textarea{
 				<textarea name="log" form="userForm" id="description" placeholder="Write Here" >{{desc}}</textarea>
 			</div>
 			<input type="hidden" name="date" value="{{date}}">
+			<input type="hidden" name="challenge" value="{{challenge}}">
 		  <button class="smallbtn" type="submit" >Save</button>
 		</form>
 

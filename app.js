@@ -51,11 +51,11 @@ app.get('/project/:name', project.viewProject)
 app.get('/history', history.view);
 app.get('/log/:date', log.view);
 app.get('/challenge', challenge.view);
-app.get('/entry', entry.view);
+app.post('/entry', entry.view);
 app.get('/entry/:date', entry.edit);
 app.get('/help', help.view);
 app.get('/guide', guide.view);
-app.get('/complete', complete.view);
+app.post('/complete', complete.view);
 app.get('/new',challenge.view2)
 app.post('/add', add.addEntry);
 
