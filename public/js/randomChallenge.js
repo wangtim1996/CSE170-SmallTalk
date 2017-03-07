@@ -39,6 +39,7 @@ function set(){
 	var challenge = challenges[Math.floor(Math.random()*challenges.length)];
     document.getElementById("chal").innerHTML = challenge;
 	$('#challengeInput').val(challenge);
+    ga("send", "event", "challenge", "click");
 }
 
 function setRandom()
@@ -61,4 +62,5 @@ function setRandom()
 
 	$('.theChallenge').html(challenge);
   $('#challengeInput').val(challenge);
+    ga("send", "event", "challenge", "click");
 }
