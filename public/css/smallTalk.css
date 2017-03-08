@@ -11,7 +11,7 @@
     letter-spacing:1px;
     width: 90%;
     float: none;
-     text-align: center;
+    text-align: center;
 }
 
 .indexTitlePage{
@@ -23,11 +23,11 @@
 }
 
 .subHeader{
-     color: #0B76BC;
+    color: #0B76BC;
     font-size: 300%;
     letter-spacing:1px;
-    text-align: center;
     width: 90%;
+    text-align: center;
 
 }
 
@@ -139,7 +139,8 @@
   border-radius: 60px;
   color: #ffffff;
   font-size: 150%;
-  padding: 5% 3% 2% 3%;
-  text-align: center;
+  padding: 4% 3% 2% 4%;
+  margin-top: 1%;
+  
 }
 

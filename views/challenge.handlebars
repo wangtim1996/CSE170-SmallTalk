@@ -50,6 +50,8 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 			text-align: center;
 			vertical-align: center;
         }
+        
+
 
 	</style>
 	<!-- this is a comment in HTML -->
@@ -67,17 +69,15 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
 		<!-- p means paragraph -->
 
-
-
-        <div><a href="/index"><button class="homebtn">MAIN MENU</button></a></div>
-		<div align="center">
-			<h1 class="titlePage">SmallTalk</h1>
+		<div>
+            <a href="/index"><button class="homebtn">MAIN MENU</button></a>
+			<h1 class="titlePage">Challenge</h1>
 		</div>
 
         {{#if alt}}
               <hr style="height:4px;border:none;color:#333;background-color:#333;" />
 
-            <div class="text-center">
+            <div align-text="center">
               <h2 class="subHeader">Your Challenge of the Day</h2>
             </div>
 
@@ -100,7 +100,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
          {{else}}
             <hr style="height:4px;border:none;color:#333;background-color:#333;" />
 
-            <div class="text-center">
+            <div>
                 <h2 class="subHeader">Your Challenge of the Day</h2>
             </div>
 
@@ -113,20 +113,19 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
             </table>
 
         {{/if}}
+        <div align="center">
         <table class="main" border="0">
             <tr>
                 <td>
-									<form action= "/complete" method="get" id="challengeDone">
-										<input type="hidden" name="challenge" id="challengeInput" value="">
-									</form>
+				<form action= "/complete" method="get" id="challengeDone">
+						<input type="hidden" name="challenge" id="challengeInput" value="">	
+                </form>
                   <button type="submit" form="challengeDone" value="Completed" class="mediumbtn">Challenge Completed</button>
                 </td>
             </tr>
         </table>
-
-
-	</div>
-
+        </div>
+        </div>
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
