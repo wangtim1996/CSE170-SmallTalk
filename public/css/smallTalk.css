@@ -7,19 +7,27 @@
 
 .titlePage{
     color: #0B76BC;
-    font-size: 450%;
-    
+    font-size: 500%;
     letter-spacing:1px;
-    text-align:center;
+    width: 90%;
+    float: none;
+     text-align: center;
+}
+
+.indexTitlePage{
+    color: #0B76BC;
+    font-size: 500%;
+    letter-spacing:1px;
     width: 90%;
    
 }
 
 .subHeader{
-    color: #0B76BC;
-    font-size: 200%;
-
+     color: #0B76BC;
+    font-size: 300%;
     letter-spacing:1px;
+    text-align: center;
+    width: 90%;
 
 }
 
@@ -44,7 +52,6 @@
   margin: 10px;
 }
 
-
 .mediumbtn {
   background: #3498db;
   background-image: linear-gradient(top, #3498db, #2980b9);
@@ -60,7 +67,6 @@
   width: 60%;
   height: 250%;
   font-size: 150%;
-  text-align: center;
   padding: 10px 40px 10px 40px;
   margin: 10px;
 }
@@ -98,7 +104,7 @@
   color: #ffffff;
   width: 50%;
   height: 250%;
-   text-align: center''
+   text-align: center;
   font-size:150 %;
   padding: 10px 40px 10px 40px;
 }
@@ -128,11 +134,12 @@
   background-image: linear-gradient(top, #3498db, #2980b9);
   background-image: linear-gradient(top, #3498db, #2980b9);
   background-image: linear-gradient(to bottom, #3498db, #2980b9);
-  border-radius: 60px;
+  border-radius: 50px;
   border-radius: 80px;
   border-radius: 60px;
   color: #ffffff;
-  font-size: 20px;
-  padding: 36px 28px 26px 18px;
+  font-size: 150%;
+  padding: 5% 3% 2% 3%;
+  text-align: center;
 }
 
