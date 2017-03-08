@@ -55,7 +55,7 @@ app.post('/entry', entry.view);
 app.get('/entry/:date', entry.edit);
 app.get('/help', help.view);
 app.get('/guide', guide.view);
-app.post('/complete', complete.view);
+app.get('/complete', complete.view);
 app.get('/new',challenge.view2)
 app.post('/add', add.addEntry);
 
