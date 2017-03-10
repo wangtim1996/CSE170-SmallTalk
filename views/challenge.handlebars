@@ -77,7 +77,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
               <hr style="height:4px;border:none;color:#333;background-color:#333;" />
 
             <div align-text="center">
-              <h2 class="subHeader">Your </h2>
+              <h2 class="subHeader">Your Challenge Of The Day</h2>
             </div>
 
             <table class="main" border="0" cellpadding="15" margin="10">
@@ -117,7 +117,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
         <table class="main" border="0">
             <tr>
                 <td>
-				<form action= "/complete" method="get" id="challengeDone">
+				<form action= "/complete" method="post" id="challengeDone">
 						<input type="hidden" name="challenge" id="challengeInput" value="">	
                 </form>
                   <button type="submit" form="challengeDone" value="Completed" class="mediumbtn">Challenge Completed</button>
