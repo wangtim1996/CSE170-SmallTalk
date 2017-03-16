@@ -97,20 +97,28 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 
 
          {{else}}
+        <hr style="height:4px;border:none;color:#333;background-color:#333;" />
         <div align="center">
-            <hr style="height:4px;border:none;color:#333;background-color:#333;" />
-
-            <div>
-                <h2 class="subHeader">Your Challenge of the Day</h2>
+              <div align="center">
+              <h2 class="subHeader">Your Challenge Of The Day</h2>
             </div>
 
             <table class="main" border="0" cellpadding="15" margin="10">
                 <tr class="challengeBorder">
                     <td>
-                        <a href="#"><p class="theChallenge">{{challenge}}</p></a>
+
+                        <div>
+                              <p id="chal" class="theChallenge">{{challenge}}</p>
+                         </div>
                     </td>
                 </tr>
             </table>
+
+        <div align="center">
+        <button onClick="set()" class="smallbtn">Get New Challenge</button>
+        </div>
+
+
 
         {{/if}}
         
